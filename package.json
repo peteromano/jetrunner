@@ -1,0 +1,41 @@
+{
+  "name": "jetfuel.test.jetrunner",
+  "version": "0.1.0",
+  "title": "jetfuel.test.jetrunner",
+  "description": "JetRunner unit test server for the JetFuel engine.",
+  "homepage": "https://github.com/peteromano/jetfuel.test.jetrunner/wiki",
+  "keywords": ["jetfuel", "jetrunner", "jetfuel.test.jetrunner"],
+  "author": {
+    "name": "Pete Romano",
+    "email": "pete.romano@yahoo.com",
+    "url": "http://www.peteromano.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peteromano/jetfuel.test.jetrunner"
+  },
+  "bugs": {
+    "url": "https://github.com/peteromano/jetfuel.test.jetrunner/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "main": "./lib/jetrunner",
+  "man": "./man/jetrunner.1",
+  "bin": {
+    "jetrunner": "./bin/jetrunner"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib",
+    "man": "./man"
+  },
+  "scripts": {
+    "test": "node ./test/jetrunner.test.js"
+  },
+  "dependencies": {
+    "vows": "latest"
+  },
+  "devDependencies": {}
+}
