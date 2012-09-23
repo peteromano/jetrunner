@@ -1,6 +1,6 @@
 var vows = require('vows'),
 	assert = require('assert'),
-    jetrunner = require('../lib/jetrunner');
+    jetrunner = require('../lib');
 
 vows.describe('JetRunner').addBatch({
 

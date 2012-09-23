@@ -1,6 +1,6 @@
 {
   "name": "jetfuel.test.jetrunner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "title": "jetfuel.test.jetrunner",
   "description": "JetRunner unit test server for the JetFuel engine.",
   "homepage": "https://github.com/peteromano/jetfuel.test.jetrunner/wiki",
@@ -21,7 +21,7 @@
   "engines": {
     "node": ">= 0.6.0"
   },
-  "main": "./lib/jetrunner",
+  "main": "./lib",
   "man": "./man/jetrunner.1",
   "bin": {
     "jetrunner": "./bin/jetrunner"
@@ -32,12 +32,13 @@
     "man": "./man"
   },
   "scripts": {
-    "test": "node ./test/jetrunner.test.js"
+    "test": "node ./test/index.test.js"
   },
   "dependencies": {
     "express": "latest",
-    "jade": "latest",
-    "vows": "latest"
+    "jade": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vows": "latest"
+  }
 }
