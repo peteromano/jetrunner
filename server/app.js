@@ -20,7 +20,7 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   //app.use(express.static(path.join(__dirname, 'public')));
-  app.use(express.static(process.cwd()));
+  app.use(express.static(process.cwd() + '/build'));
 });
 
 app.configure('development', function(){
