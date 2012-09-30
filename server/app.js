@@ -1,4 +1,10 @@
-module.exports = function(options) {
+(function(undefined) {
+
+  var instance;
+
+  var app = module.exports = function(options) {
+    if(instance) return instance;
+
     /**
      * Module dependencies.
      */
@@ -8,7 +14,7 @@ module.exports = function(options) {
       , http = require('http')
       , path = require('path');
 
-    var app = express();
+    var app = instance = express();
 
     options = options || {};
 
@@ -34,4 +40,8 @@ module.exports = function(options) {
       console.log("Express server listening on port " + app.get('port'));
     });
 
-};
+    return instance = this;
+
+  };
+
+})(undefined);
