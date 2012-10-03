@@ -1,0 +1,3 @@
+[submodule "resources/mocha-phantomjs"]
+	path = resources/mocha-phantomjs
+	url = https://github.com/metaskills/mocha-phantomjs

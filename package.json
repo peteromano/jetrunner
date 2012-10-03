@@ -4,7 +4,7 @@
   "title": "jetfuel.test.jetrunner",
   "description": "JetRunner unit test server for the JetFuel engine.",
   "homepage": "https://github.com/peteromano/jetfuel.test.jetrunner/wiki",
-  "keywords": ["jetfuel", "jetrunner", "jetfuel.test.jetrunner"],
+  "keywords": ["jetfuel", "jetrunner", "jetfuel.test.jetrunner", "mocha"],
   "author": {
     "name": "Pete Romano",
     "email": "pete.romano@yahoo.com",
