@@ -1,6 +1,6 @@
 {
   "name": "jetfuel.test.jetrunner",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "title": "jetfuel.test.jetrunner",
   "description": "JetRunner unit test server for the JetFuel engine.",
   "homepage": "https://github.com/peteromano/jetfuel.test.jetrunner/wiki",
