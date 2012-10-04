@@ -29,16 +29,14 @@
   "directories": {
     "bin": "./bin",
     "lib": "./lib",
-    "man": "./man"
+    "man": "./man",
+    "test": "test"
   },
   "scripts": {
-    "test": "node ./test/index.test.js"
+    "test": "mocha ./test/index.js -R spec"
   },
   "dependencies": {
     "express": "*",
     "jade": "*"
-  },
-  "devDependencies": {
-    "vows": "*"
   }
 }
