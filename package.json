@@ -1,10 +1,10 @@
 {
-  "name": "jetfuel.test.jetrunner",
-  "version": "0.1.11",
-  "title": "jetfuel.test.jetrunner",
+  "name": "jetrunner",
+  "version": "1.0.0pre-1",
+  "title": "JetRunner Unit Test Server",
   "description": "JetRunner unit test server for the JetFuel engine.",
-  "homepage": "https://github.com/peteromano/jetfuel.test.jetrunner/wiki",
-  "keywords": ["jetfuel", "jetrunner", "jetfuel.test.jetrunner", "mocha"],
+  "homepage": "https://github.com/peteromano/jetrunner/wiki",
+  "keywords": ["jetfuel", "jetrunner", "mocha"],
   "author": {
     "name": "Pete Romano",
     "email": "pete.romano@yahoo.com",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peteromano/jetfuel.test.jetrunner"
+    "url": "https://github.com/peteromano/jetrunner"
   },
   "bugs": {
-    "url": "https://github.com/peteromano/jetfuel.test.jetrunner/issues"
+    "url": "https://github.com/peteromano/jetrunner/issues"
   },
   "license": "MIT",
   "engines": {
