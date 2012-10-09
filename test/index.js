@@ -1,3 +1,3 @@
-describe('jetfuel.test.jetrunner', function() {
+describe('jetrunner', function() {
     require('./version');
 });
