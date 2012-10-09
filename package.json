@@ -21,7 +21,7 @@
   "engines": {
     "node": ">= 0.6.0"
   },
-  "main": "./lib",
+  "main": "./lib/jetrunner",
   "man": "./man/jetrunner.1",
   "bin": {
     "jetrunner": "./bin/jetrunner"
@@ -30,10 +30,10 @@
     "bin": "./bin",
     "lib": "./lib",
     "man": "./man",
-    "test": "test"
+    "test": "./test"
   },
   "scripts": {
-    "test": "npm up && mocha ./test/index.js -R spec"
+    "test": "npm up && mocha ./test/jetrunner.js -R list"
   },
   "dependencies": {
     "express": "~3.0.0rc5",
