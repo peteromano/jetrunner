@@ -1,6 +1,6 @@
 {
   "name": "jetrunner",
-  "version": "1.0.0pre-1",
+  "version": "1.0.0pre2",
   "title": "JetRunner Unit Test Server",
   "description": "JetRunner unit test server for the JetFuel engine.",
   "homepage": "https://github.com/peteromano/jetrunner/wiki",
@@ -36,7 +36,7 @@
     "test": "npm up && mocha ./test/index.js -R spec"
   },
   "dependencies": {
-    "express": "*",
-    "jade": "*"
+    "express": "~3.0.0rc5",
+    "jade": "~0.27.6"
   }
 }
