@@ -30,13 +30,15 @@
     "bin": "./bin",
     "lib": "./lib",
     "man": "./man",
-    "test": "./test"
+    "test": "./test",
+    "example": "./example"
   },
   "scripts": {
     "test": "npm up && mocha ./test/jetrunner.js -R list"
   },
   "dependencies": {
     "express": "~3.0.0rc5",
-    "jade": "~0.27.6"
+    "jade": "~0.27.6",
+    "soda": "~0.2.5"
   }
 }

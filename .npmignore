@@ -2,4 +2,3 @@
 /node_modules
 /.gitignore
 /.travis.yml
-/config.json
