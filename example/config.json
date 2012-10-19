@@ -19,9 +19,9 @@
     },
 
     "saucelabs": {
-        "url": "http://localhost",
-        "username": "username",
-        "access-key": "access-key",
+        "domain": "localhost",
+        "username": "peteromano",
+        "access-key": "1ebab6ce-c188-486f-86dd-3cc1957f2435",
         "max-duration": 300,
         "systems": [
             { "os": "Linux", "browser": "Firefox", "browser-version": "10" },
