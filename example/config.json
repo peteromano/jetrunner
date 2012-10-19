@@ -20,8 +20,8 @@
 
     "saucelabs": {
         "domain": "localhost",
-        "username": "peteromano",
-        "access-key": "1ebab6ce-c188-486f-86dd-3cc1957f2435",
+        "username": "username",
+        "access-key": "access-key",
         "max-duration": 300,
         "systems": [
             { "os": "Linux", "browser": "Firefox", "browser-version": "10" },
