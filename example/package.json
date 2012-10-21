@@ -2,6 +2,7 @@
   "name": "jetrunner-example",
   "version": "0.1.0",
   "title": "JetRunner Example",
+  "private": true,
   "description": "Example project using JetRunner.",
   "keywords": [
     "jetfuel",
