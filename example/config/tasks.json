@@ -1,0 +1,22 @@
+{
+
+    "register": {
+        "default":      "all",
+        "all":          "test deploy",
+        "ci":           "build jetrunner:remote deploy",
+        "test":         "build jetrunner:local",
+        "build":        "lint clopycat automin clocks",
+        "uglify":       "min",
+        "dev":          "lint clopycat deploy",
+        "dev:main":     "lint clopycat deploy:main",
+        "copy:js":      "copy:main",
+        "clean:js":     "clean:main",
+        "deploy:js":    "deploy:main deploy:vendor",
+        "dev:js":       "dev:main",
+        "watch:js":     "watch:main",
+        "clocks":       "clean:docs docs",
+        "clopy":        "vendor clean:main copy:main",
+        "clopycat":     "clopy autocat concat"
+    }
+
+}

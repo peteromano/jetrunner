@@ -1,0 +1,6 @@
+{
+
+  "<%= meta.dirs.test %>/PersonTest.js": "<%= meta.dirs.main.dest %>/Person.js",
+  "<%= meta.dirs.test %>/EmployeeTest.js": "<%= meta.dirs.main.dest %>/Employee.js"
+
+}

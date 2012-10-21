@@ -1,0 +1,26 @@
+!!! 5
+html(lang="en")
+  head
+    title= title
+    each style in styles
+      link(href="#{style}", rel="stylesheet")
+    script
+      LIB_PATH = '/build/lib';
+  body
+    div#mocha
+    each script in scripts
+      script(src="#{script}")
+    script
+      assert = chai.assert;
+      expect = chai.expect;
+      should = !this.mochaPhantomJS && chai.should();
+      mocha.setup({
+        ignoreLeaks: true,
+        ui: '#{ui}'
+      });
+    | <script data-main="/build/lib/app.bundled.min.js" src="/vendor/require.js"></script>
+    if lib
+        script(src="#{lib}")
+    script(src="#{test}")
+    script
+      reporter = (this.mochaPhantomJS || mocha).run();

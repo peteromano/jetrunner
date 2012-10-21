@@ -1,0 +1,12 @@
+{
+
+  "jam":        "<json:config/vendor.json>",
+
+  "grunt": {
+    "pkg":      "<json:package.json>",
+    "tasks":    "<json:config/tasks.json>",
+    "meta":     "<json:config/meta.json>",
+    "targets":  "<json:config/targets.json>"
+  }
+
+}
