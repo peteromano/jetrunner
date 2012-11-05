@@ -1,4 +1,4 @@
-define('Person', function() {
+define(function() {
     'use strict';
 
     return {

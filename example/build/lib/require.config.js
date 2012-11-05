@@ -5,7 +5,3 @@ requirejs.config({
         jquery: '/vendor/jquery/jquery'
     }
 });
-require(['jquery'], function($) {
-    'use strict';
-
-});

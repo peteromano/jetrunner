@@ -1,7 +1,4 @@
-requirejs.config({
-    baseUrl: this.LIB_PATH || '/lib'
-});
-
-requirejs(function() {
+require(['jquery'], function($) {
     'use strict';
+
 });
