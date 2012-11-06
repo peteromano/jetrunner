@@ -1,0 +1,6 @@
+{
+
+  "<%= meta.dirs.test %>/ApplicationTest.js":     "",
+  "<%= meta.dirs.test %>/services/RouterTest.js": "<%= meta.dirs.main.dest %>/services/Router.js"
+
+}

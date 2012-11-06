@@ -1,0 +1,9 @@
+{
+    "name": "mocha",
+    "version": "1.6.0",
+    "description": "Jam package for Mocha",
+    "jam": {
+        "main": "mocha/mocha.js",
+        "include": ["mocha/mocha.js", "mocha/mocha.css"]
+    }
+}

@@ -21,19 +21,16 @@
   "automin": {
     "main": {
       "src": ["<%= meta.dirs.main.dest %>/**/*.js"],
-      "dest": "<%= meta.dirs.main.dest %>",
-      "extension": ".min.js"
+      "dest": "<%= meta.dirs.main.dest %>"
     }
   },
 
   "jetrunner": {
     "local": [{
-      "reporter": "spec",
       "tests": "<json:config/tests.json>",
       "server": "<config:meta.jetrunner.server>"
     }],
     "remote": [{
-      "reporter": "tap",
       "remote": true,
       "tests": "<json:config/tests.json>",
       "server": "<config:meta.jetrunner.server>",
@@ -77,7 +74,7 @@
     },
     "deploy": {
       "src": [
-        "<%= meta.dirs.deploy %>", "<%= meta.dirs.deploy %>/**/*",
+        "<%= meta.dirs.main.deploy %>", "<%= meta.dirs.main.deploy %>/**/*",
         "<%= meta.dirs.vendor.deploy %>", "<%= meta.dirs.vendor.deploy %>/**/*"
       ]
     }

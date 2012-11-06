@@ -1,0 +1,39 @@
+{
+  "name": "espresso",
+  "version": "1.0.0",
+  "title": "espresso",
+  "description": "Espresso library for OOP design patterns.",
+  "homepage": "https://github.com/peteromano/espresso",
+  "keywords": ["espresso", "jetfuel", "jetrunner"],
+  "author": {
+    "name": "Pete Romano",
+    "email": "pete.romano@yahoo.com"
+  },
+  "main": "./espresso",
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peteromano/espresso"
+  },
+  "bugs": {
+    "url": "https://github.com/peteromano/espresso/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "jam": {
+    "dependencies": {
+      "jquery": ">=1.7.0"
+    },
+    "main": "espresso.compressed.js",
+    "include": [
+      "espresso.js",
+      "espresso.compressed.js",
+      "README.md",
+      "LICENSE-MIT"
+    ]
+  }
+}

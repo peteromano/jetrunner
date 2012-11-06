@@ -1,9 +1,9 @@
 {
-  "name": "jetrunner-example",
+  "name": "jetrunner-example-requirejs",
   "version": "0.1.0",
-  "title": "JetRunner Example",
+  "title": "JetRunner RequireJS Example",
   "private": true,
-  "description": "Example project using JetRunner.",
+  "description": "Example JetRunner project using RequireJS.",
   "keywords": [
     "jetfuel",
     "jetrunner"
@@ -21,6 +21,11 @@
   },
   "engines": {
     "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "build": "npm up && jetfuel build",
+    "test": "npm up && jetfuel test",
+    "doc": "jetfuel docs"
   },
   "jam": {
     "packageDir": "vendor",
