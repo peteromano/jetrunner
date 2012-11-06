@@ -28,10 +28,12 @@
 
   "jetrunner": {
     "local": [{
+      "reporter": "spec",
       "tests": "<json:config/tests.json>",
       "server": "<config:meta.jetrunner.server>"
     }],
     "remote": [{
+      "reporter": "tap",
       "remote": true,
       "tests": "<json:config/tests.json>",
       "server": "<config:meta.jetrunner.server>",
