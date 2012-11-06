@@ -13,18 +13,11 @@
     "email": "pete.romano@yahoo.com",
     "url": "http://www.peteromano.net"
   },
-  "dependencies": {
-    "express": "3.0.0rc4",
-    "jade": "*"
-  },
   "directories": {
     "src": "./src",
     "test": "./build/test",
     "doc": "./build/doc",
     "lib": "./build/lib"
-  },
-  "scripts": {
-    "start": "node app"
   },
   "engines": {
     "node": ">= 0.6.0"
