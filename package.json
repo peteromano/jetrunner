@@ -1,14 +1,14 @@
 {
   "name": "jetrunner",
-  "version": "1.0.0pre5",
+  "version": "1.0.0",
   "title": "JetRunner Unit Test Server",
   "description": "JetRunner unit test server for the JetFuel engine.",
-  "homepage": "https://github.com/peteromano/jetrunner/wiki",
+  "homepage": "http://peteromano.github.com/jetrunner/",
   "keywords": ["jetfuel", "jetrunner", "mocha"],
   "author": {
     "name": "Pete Romano",
     "email": "pete.romano@yahoo.com",
-    "url": "http://www.peteromano.net"
+    "url": "http://peteromano.net"
   },
   "repository": {
     "type": "git",
