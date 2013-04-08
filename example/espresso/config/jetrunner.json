@@ -5,6 +5,8 @@
     },
 
     "server": {
+        "port": 4444,
+        "reporter": "spec",
         "runner": {
             "template": "src/test/JetRunner.jade",
             "styles": ["vendor/mocha/mocha/mocha.css"],
@@ -16,7 +18,10 @@
         }
     },
 
-    "saucelabs": {
+    "cloud": {
+        "service": "browserstack",
+        "reporter": "tap",
+        "port": 4444,
         "domain": "localhost",
         "username": "username",
         "access-key": "access-key",

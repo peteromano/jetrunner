@@ -22,7 +22,8 @@
       }
     },
 
-    "saucelabs": {
+    "cloud": {
+      "service": "browserstack",
       "domain": "localhost",
       "username": "username",
       "access-key": "access-key",

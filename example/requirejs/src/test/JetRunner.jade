@@ -21,6 +21,6 @@ html(lang="en")
         ui: '#{ui}'
       });
 
-      require(['#{lib}', '#{test}'], function() {
+      require(['#{src}', '#{test}'], function() {
         reporter = (this.mochaPhantomJS || mocha).run();
       });
