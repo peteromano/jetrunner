@@ -1,3 +1,0 @@
-[submodule "lib/drivers/phantomjs/mocha-phantomjs"]
-	path = lib/drivers/phantomjs/mocha-phantomjs
-	url = https://github.com/metaskills/mocha-phantomjs
