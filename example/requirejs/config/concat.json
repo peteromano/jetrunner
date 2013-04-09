@@ -1,7 +1,0 @@
-[{
-  "dest": "<%= meta.dirs.main.dest %>/app.bundled.js",
-  "src": [
-    "<%= meta.dirs.main.dest %>/require.config.js",
-    "<%= meta.dirs.main.dest %>/app.js"
-  ]
-}]

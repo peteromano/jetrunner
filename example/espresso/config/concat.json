@@ -1,8 +1,0 @@
-[{
-  "dest": "<%= meta.dirs.main.dest %>/Application.bundled.js",
-  "src": [
-    "<%= meta.dirs.vendor.dest %>/jquery/jquery.js",
-    "<%= meta.dirs.vendor.dest %>/espresso/espresso.js",
-    "<%= meta.dirs.main.dest %>/Application.js"
-  ]
-}]

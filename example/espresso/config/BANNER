@@ -1,3 +1,0 @@
-/*! <%= pkg.title || pkg.name %> v<%= pkg.version %> - <%= grunt.template.today('yyyy-mm-dd') %>
- *  <%= pkg.homepage || '' %>
- *  Copyright (c) <%= grunt.template.today('yyyy') %> <%= pkg.organization || (pkg.author && pkg.author.name) %> */

@@ -1,4 +1,4 @@
-var jetrunner = require('../lib/jetrunner'),
+var jetrunner = require('../lib'),
     assert = require('assert');
 
 describe('#version()', function() {

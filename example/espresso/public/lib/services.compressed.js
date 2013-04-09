@@ -1,1 +1,0 @@
-espresso.Service("services.Router",function(e,t,n,r){"use strict";return{initialize:function(){}}},{Dependencies:["Application @alias=Application @bundled"]});

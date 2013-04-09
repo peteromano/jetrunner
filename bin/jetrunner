@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('../lib/jetrunner').cli();
+require('../lib').cli();

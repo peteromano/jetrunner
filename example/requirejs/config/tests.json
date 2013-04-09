@@ -1,6 +1,0 @@
-{
-
-  "<%= meta.dirs.test %>/PersonTest.js":    "Person",
-  "<%= meta.dirs.test %>/EmployeeTest.js":  "Employee"
-
-}

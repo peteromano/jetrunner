@@ -1,0 +1,23 @@
+!!! 5
+html(lang="en")
+  head
+    title= title
+    each style in styles
+      link(href="#{style}", rel="stylesheet")
+  body
+    div#mocha
+    each script in scripts
+      script(src="#{script}")
+    script
+      assert = chai.assert;
+      expect = chai.expect;
+      mocha.setup({
+        ignoreLeaks: true,
+        //reporter: '#{reporter}',
+        ui: '#{ui}'
+      });
+    if src
+        script(src="#{src}")
+    script(src="#{test}")
+    script
+      reporter = (this.mochaPhantomJS || mocha).run();
