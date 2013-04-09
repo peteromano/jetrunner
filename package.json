@@ -34,7 +34,7 @@
     "example": "./example"
   },
   "scripts": {
-    "test": "mocha ./test -R list"
+    "test": "mocha ./test -R spec"
   },
   "dependencies": {
     "express": "~3.0.0rc5",
