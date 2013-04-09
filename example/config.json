@@ -1,0 +1,5 @@
+{
+    "tests": [
+        { "/example/test/adder_test.js": "/example/src/adder.js" }
+    ]
+}
