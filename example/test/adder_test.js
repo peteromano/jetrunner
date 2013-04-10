@@ -1,6 +1,6 @@
 'use strict';
 
-describe('adder', function(){
+describe('Adder', function(){
 
     describe('#add()', function(){
 
