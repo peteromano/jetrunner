@@ -1,20 +1,20 @@
 {
+    "port": 3000,
     "tests": [
         { "/example/test/adder_test.js": "/example/src/adder.js" },
         { "/example/test/divider_test.js": "/example/src/divider.js" }
     ],
     "client": {
         "driver": "saucelabs",
-        "key": "",
-        "username": "",
-        "password": "",
+        "key": "1ebab6ce-c188-486f-86dd-3cc1957f2435",
+        "username": "peteromano",
+        "password": "j3trvnz3r",
         "tunnel": {
             "enabled": true,
-            "path": ""
+            "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar"
         },
         "browsers": [
-            { "version": "14.0", "browser": "chrome", "os": "win" },
-            { "version": "15.0", "browser": "chrome", "os": "win" }
+            { "version": "3.6", "browser": "Firefox", "os": "Windows XP" }
         ]
     }
 }
