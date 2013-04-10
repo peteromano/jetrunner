@@ -1,0 +1,14 @@
+{
+    "tests": [
+        { "/example/test/adder_test.js": "/example/src/adder.js" },
+        { "/example/test/divider_test.js": "/example/src/divider.js" }
+    ],
+    "client": {
+        "driver": "browserstack",
+        "key": "6J2O0vqlTZBEodqdvBMM",
+        "tunnel": {
+            "enabled": true,
+            "path": "/usr/local/opt/BrowserStackTunnel.jar"
+        }
+    }
+}
