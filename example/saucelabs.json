@@ -14,7 +14,8 @@
             "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar"
         },
         "browsers": [
-            { "version": "3.6", "browser": "Firefox", "os": "Windows XP" }
+            { "version": "10", "browser": "Firefox", "os": "Linux" },
+            { "version": "9", "browser": "Firefox", "os": "Linux" }
         ]
     }
 }
