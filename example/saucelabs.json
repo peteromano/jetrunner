@@ -4,13 +4,13 @@
         { "/example/test/divider_test.js": "/example/src/divider.js" }
     ],
     "client": {
-        "driver": "browserstack",
-        "key": "6J2O0vqlTZBEodqdvBMM",
-        "username": "pete.romano@yahoo.com",
-        "password": "j3trvnz3r",
+        "driver": "saucelabs",
+        "key": "",
+        "username": "",
+        "password": "",
         "tunnel": {
             "enabled": true,
-            "path": "/usr/local/opt/BrowserStackTunnel.jar"
+            "path": ""
         },
         "browsers": [
             { "version": "14.0", "browser": "chrome", "os": "win" },
