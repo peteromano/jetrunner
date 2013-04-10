@@ -1,7 +1,9 @@
-JetRunner. (Who sayz you can't haz it all?)
-===========================================
+JetRunner.
+==========
 
-Made for a brogrammer, by a brogrammer, this package spins up a simple web server for you to test 1:1* pairings of JavaScript source, to unit test, files - conveniently.
+### Who sayz you can't haz it all?
+
+This package spins up a simple web server for you to test 1:1* pairings of JavaScript source, to unit test, files - conveniently.
 
 \* The source file is actually not required; you can just run a stand-alone unit test file.
 
