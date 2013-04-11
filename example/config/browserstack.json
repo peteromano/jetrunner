@@ -1,13 +1,14 @@
 {
     "tests": [
-        { "/example/test/adder_test.js": "/example/src/adder.js" },
-        { "/example/test/divider_test.js": "/example/src/divider.js" }
+        { "/example/test/divider_test.js": "/example/src/divider.js" },
+        { "/example/test/adder_test.js": "/example/src/adder.js" }
     ],
     "client": {
         "driver": "browserstack",
         "key": "6J2O0vqlTZBEodqdvBMM",
         "username": "pete.romano@yahoo.com",
         "password": "j3trvnz3r",
+        "continueOnFail": true,
         "tunnel": {
             "enabled": true,
             "path": "/usr/local/opt/BrowserStackTunnel.jar"

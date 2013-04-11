@@ -20,4 +20,9 @@ html(lang="en")
         script(src="#{src}")
     script(src="#{test}")
     script
-      reporter = (this.mochaPhantomJS || mocha).run();
+      // Run Mocha:
+      reporter = (this.mochaPhantomJS || mocha).run(function() {
+        // JetRunner remote reporting integration (via SauceLabs, BrowserStack, etc.):
+        jetrunner = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+      });
+
