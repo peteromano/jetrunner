@@ -10,6 +10,7 @@
         "username": "peteromano",
         "password": "j3trvnz3r",
         "continueOnFail": true,
+        "maxParallel": 2,
         "tunnel": {
             "enabled": true,
             "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar"
