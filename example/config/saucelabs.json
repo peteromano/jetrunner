@@ -1,5 +1,4 @@
 {
-    "port": 3333,
     "tests": [
         { "/example/test/adder_test.js": "/example/src/adder.js" },
         { "/example/test/divider_test.js": "/example/src/divider.js" }
@@ -13,7 +12,9 @@
         "maxParallel": 2,
         "tunnel": {
             "enabled": true,
-            "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar"
+            "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar",
+            "readyFile": "sauce_connect.log",
+            "fastFailRegexps": ["favicon.ico"]
         },
         "browsers": [
             { "version": "10", "browser": "Firefox", "os": "Linux" },
