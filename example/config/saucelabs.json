@@ -1,7 +1,8 @@
 {
     "tests": [
         { "/example/test/adder_test.js": "/example/src/adder.js" },
-        { "/example/test/divider_test.js": "/example/src/divider.js" }
+        { "/example/test/divider_test.js": "/example/src/divider.js" },
+        { "/example/test/multiplier_test.js": "/example/src/multiplier.js" }
     ],
     "client": {
         "driver": "saucelabs",
@@ -17,10 +18,22 @@
             "fastFailRegexps": ["favicon.ico"]
         },
         "browsers": [
-            { "version": "10", "browser": "Firefox", "os": "Linux" },
-            { "version": "9", "browser": "Firefox", "os": "Linux" },
-            { "version": "8", "browser": "Firefox", "os": "Linux" },
-            { "version": "7", "browser": "Firefox", "os": "Linux" }
+            {"browser": "googlechrome", "os": "OS X 10.8", "browser-version": ""},
+            {"browser": "safari", "os": "OS X 10.8", "browser-version": "6"},
+
+            {"browser": "firefox", "os": "Windows 8", "browser-version": "20"},
+
+            {"browser": "googlechrome", "os": "Windows 7", "browser-version": ""},
+            {"browser": "iehta", "os": "Windows 7", "browser-version": "9"},
+            {"browser": "iehta", "os": "Windows 7", "browser-version": "8"},
+            {"browser": "firefox", "os": "Windows 7", "browser-version": "20"},
+
+            {"browser": "googlechrome", "os": "Windows XP", "browser-version": ""},
+            {"browser": "iehta", "os": "Windows XP", "browser-version": "8"},
+            {"browser": "firefox", "os": "Windows XP", "browser-version": "20"},
+
+            {"browser": "googlechrome", "os": "Linux", "browser-version": ""},
+            {"browser": "firefox", "os": "Linux", "browser-version": "20"}
         ]
     }
 }
