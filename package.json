@@ -39,7 +39,6 @@
   "dependencies": {
     "express": "~3.0.0rc5",
     "jade": "~0.27.6",
-    "fibers": "~1.0.0",
     "soda": "~0.2.5",
     "browserstack": "~0.2.0",
     "optimist": "~0.3.7",

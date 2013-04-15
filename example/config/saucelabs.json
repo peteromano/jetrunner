@@ -18,7 +18,9 @@
         },
         "browsers": [
             { "version": "10", "browser": "Firefox", "os": "Linux" },
-            { "version": "9", "browser": "Firefox", "os": "Linux" }
+            { "version": "9", "browser": "Firefox", "os": "Linux" },
+            { "version": "8", "browser": "Firefox", "os": "Linux" },
+            { "version": "7", "browser": "Firefox", "os": "Linux" }
         ]
     }
 }
