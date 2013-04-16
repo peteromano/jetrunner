@@ -10,6 +10,13 @@ html(lang="en")
       pre(style="white-space:normal;border:solid 1px #ccc;background:#ebebeb;padding:20px;")
         script
           document.write(decodeURIComponent(location));
+    div#jetrunner-stream-debug
+    script
+      if(#{DEBUG}) {
+        window.onerror = function(err, url, line) {
+          document.getElementById('jetrunner-stream-debug').innerHTML += '<p>' + [err, '[' + decodeURIComponent(url) + ':' + line + ']'].join(' ') + '</p>';
+        }
+      }
     div#mocha
     each script in scripts
       script(src="#{script}")
@@ -28,6 +35,6 @@ html(lang="en")
       // Run Mocha:
       reporter = (this.mochaPhantomJS || mocha).run(function() {
         // JetRunner remote reporting integration (via SauceLabs, BrowserStack, etc.):
-        jetrunner = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+        jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
       });
 
