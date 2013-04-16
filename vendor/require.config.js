@@ -6,14 +6,14 @@ var jam = {
             "main": "chai/chai.js"
         },
         {
-            "name": "sinon",
-            "location": "vendor/sinon",
-            "main": "sinon.js"
-        },
-        {
             "name": "mocha",
             "location": "vendor/mocha",
             "main": "mocha/mocha.js"
+        },
+        {
+            "name": "sinon",
+            "location": "vendor/sinon",
+            "main": "sinon.js"
         }
     ],
     "version": "0.2.17",
@@ -33,14 +33,14 @@ if (typeof require !== "undefined" && require.config) {
             "main": "chai/chai.js"
         },
         {
-            "name": "sinon",
-            "location": "vendor/sinon",
-            "main": "sinon.js"
-        },
-        {
             "name": "mocha",
             "location": "vendor/mocha",
             "main": "mocha/mocha.js"
+        },
+        {
+            "name": "sinon",
+            "location": "vendor/sinon",
+            "main": "sinon.js"
         }
     ],
     "shim": {
@@ -59,14 +59,14 @@ else {
             "main": "chai/chai.js"
         },
         {
-            "name": "sinon",
-            "location": "vendor/sinon",
-            "main": "sinon.js"
-        },
-        {
             "name": "mocha",
             "location": "vendor/mocha",
             "main": "mocha/mocha.js"
+        },
+        {
+            "name": "sinon",
+            "location": "vendor/sinon",
+            "main": "sinon.js"
         }
     ],
     "shim": {
