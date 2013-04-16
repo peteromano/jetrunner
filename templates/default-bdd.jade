@@ -30,12 +30,32 @@ html(lang="en")
     script(src="#{test}")
     script
       this.reporter = (this.mochaPhantomJS || this.mocha).run(function() {
-        var reporter = self.reporter || self.mocha;
+        var cache = [];
+
+        if (!Array.prototype.indexOf) {
+            Array.prototype.indexOf = function(obj, start) {
+                 for (var i = (start || 0), j = this.length; i < j; i++) {
+                     if (this[i] === obj) { return i; }
+                 }
+                 return -1;
+            }
+        }
 
         try {
-            self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+            self.jetstream = JSON.stringify(self.reporter, function(key, value) {
+                if (typeof value === 'object' && value !== null) {
+                    if (cache.indexOf(value) !== -1) {
+                        // Circular reference found, discard key
+                        return;
+                    }
+                    // Store value in our collection
+                    cache.push(value);
+                }
+                return value;
+            });
         } catch(e) {
             self.jetstream = null;
+        } finally {
+            cache = null;
         }
       });
-

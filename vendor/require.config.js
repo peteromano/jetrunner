@@ -6,6 +6,11 @@ var jam = {
             "main": "./index"
         },
         {
+            "name": "json3",
+            "location": "vendor/json3",
+            "main": "./lib/json3.min"
+        },
+        {
             "name": "mocha",
             "location": "vendor/mocha",
             "main": "./index"
@@ -33,6 +38,11 @@ if (typeof require !== "undefined" && require.config) {
             "main": "./index"
         },
         {
+            "name": "json3",
+            "location": "vendor/json3",
+            "main": "./lib/json3.min"
+        },
+        {
             "name": "mocha",
             "location": "vendor/mocha",
             "main": "./index"
@@ -57,6 +67,11 @@ else {
             "name": "chai",
             "location": "vendor/chai",
             "main": "./index"
+        },
+        {
+            "name": "json3",
+            "location": "vendor/json3",
+            "main": "./lib/json3.min"
         },
         {
             "name": "mocha",
