@@ -1,6 +1,8 @@
 {
     "tests": [
-        { "/example/test/adder_test.js": "/example/src/adder.js" }
+        { "/example/test/adder_test.js": "/example/src/adder.js" },
+        { "/example/test/divider_test.js": "/example/src/divider.js" },
+        { "/example/test/multiplier_test.js": "/example/src/multiplier.js" }
     ],
     "runner": {
         "styles": ["/example/vendor/mocha/mocha.css"],
