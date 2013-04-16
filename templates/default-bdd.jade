@@ -5,6 +5,11 @@ html(lang="en")
     each style in styles
       link(href="#{style}", rel="stylesheet")
   body
+    div#jetrunner
+      h3 JetRunner URL:
+      pre(style="white-space:normal;border:solid 1px #ccc;background:#ebebeb;padding:20px;")
+        script
+          document.write(decodeURIComponent(location));
     div#mocha
     each script in scripts
       script(src="#{script}")
