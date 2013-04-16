@@ -24,8 +24,9 @@
             {"browser": "firefox", "os": "Windows 8", "browser-version": "20"},
 
             {"browser": "googlechrome", "os": "Windows 7", "browser-version": ""},
-            {"browser": "iehta", "os": "Windows 7", "browser-version": "9"},
             {"browser": "firefox", "os": "Windows 7", "browser-version": "20"},
+            {"browser": "iehta", "os": "Windows 7", "browser-version": "9"},
+            {"browser": "iehta", "os": "Windows 7", "browser-version": "8"},
 
             {"browser": "googlechrome", "os": "Windows XP", "browser-version": ""},
             {"browser": "firefox", "os": "Windows XP", "browser-version": "20"},

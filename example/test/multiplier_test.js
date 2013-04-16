@@ -4,16 +4,16 @@ describe('Multiplier', function(){
 
     describe('#multiply()', function(){
 
-        it('should multiply.', function(){
-            expect(Multiplier.multiply(4, 2)).to.equal(8);
+        it('should multiply.', function(done){
+            done(Multiplier.multiply(4, 2) == 8 && null);
         });
 
-        it('should be associative.', function(){
-            expect(Multiplier.multiply(2, 4)).to.equal(8);
+        it('should be associative.', function(done){
+            done(Multiplier.multiply(2, 4) == 8 && null);
         });
 
-        it('should be zero if multiplying by zero.', function(){
-            expect(Multiplier.multiply(2, 0)).to.equal(0);
+        it('should be zero if multiplying by zero.', function(done){
+            done(Multiplier.multiply(2, 0) == 0 && null);
         });
 
     });

@@ -3,7 +3,7 @@ var jam = {
         {
             "name": "chai",
             "location": "vendor/chai",
-            "main": "chai/chai.js"
+            "main": "./index"
         },
         {
             "name": "mocha",
@@ -30,7 +30,7 @@ if (typeof require !== "undefined" && require.config) {
         {
             "name": "chai",
             "location": "vendor/chai",
-            "main": "chai/chai.js"
+            "main": "./index"
         },
         {
             "name": "mocha",
@@ -56,7 +56,7 @@ else {
         {
             "name": "chai",
             "location": "vendor/chai",
-            "main": "chai/chai.js"
+            "main": "./index"
         },
         {
             "name": "mocha",
