@@ -2,22 +2,22 @@ var jam = {
     "packages": [
         {
             "name": "chai",
-            "location": "vendor/chai",
+            "location": "example/vendor/chai",
             "main": "./index"
         },
         {
             "name": "json3",
-            "location": "vendor/json3",
+            "location": "example/vendor/json3",
             "main": "./lib/json3.min"
         },
         {
             "name": "mocha",
-            "location": "vendor/mocha",
+            "location": "example/vendor/mocha",
             "main": "./index"
         },
         {
             "name": "sinon",
-            "location": "vendor/sinon",
+            "location": "example/vendor/sinon",
             "main": "sinon.js"
         }
     ],
@@ -34,22 +34,22 @@ if (typeof require !== "undefined" && require.config) {
     "packages": [
         {
             "name": "chai",
-            "location": "vendor/chai",
+            "location": "example/vendor/chai",
             "main": "./index"
         },
         {
             "name": "json3",
-            "location": "vendor/json3",
+            "location": "example/vendor/json3",
             "main": "./lib/json3.min"
         },
         {
             "name": "mocha",
-            "location": "vendor/mocha",
+            "location": "example/vendor/mocha",
             "main": "./index"
         },
         {
             "name": "sinon",
-            "location": "vendor/sinon",
+            "location": "example/vendor/sinon",
             "main": "sinon.js"
         }
     ],
@@ -65,22 +65,22 @@ else {
     "packages": [
         {
             "name": "chai",
-            "location": "vendor/chai",
+            "location": "example/vendor/chai",
             "main": "./index"
         },
         {
             "name": "json3",
-            "location": "vendor/json3",
+            "location": "example/vendor/json3",
             "main": "./lib/json3.min"
         },
         {
             "name": "mocha",
-            "location": "vendor/mocha",
+            "location": "example/vendor/mocha",
             "main": "./index"
         },
         {
             "name": "sinon",
-            "location": "vendor/sinon",
+            "location": "example/vendor/sinon",
             "main": "sinon.js"
         }
     ],

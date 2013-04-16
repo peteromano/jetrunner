@@ -4,6 +4,14 @@
         { "/example/test/divider_test.js": "/example/src/divider.js" },
         { "/example/test/multiplier_test.js": "/example/src/multiplier.js" }
     ],
+    "runner": {
+        "styles": ["/example/vendor/mocha/mocha.css"],
+        "scripts": [
+            "/example/vendor/json3/lib/json3.min.js",
+            "/example/vendor/mocha/mocha.js",
+            "/example/vendor/sinon/sinon.js"
+        ]
+    },
     "client": {
         "driver": "browserstack",
         "key": "6J2O0vqlTZBEodqdvBMM",

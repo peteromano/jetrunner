@@ -50,7 +50,7 @@
     "jsdoc": "git://github.com/jsdoc3/jsdoc.git#master"
   },
   "jam": {
-    "packageDir": "vendor",
+    "packageDir": "example/vendor",
     "dependencies": {
         "json3": "~3.2.2",
         "mocha": "~1.9.0",
