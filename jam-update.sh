@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npm install jamjs && ./node_modules/.bin/jam upgrade
+./node_modules/.bin/jam upgrade
