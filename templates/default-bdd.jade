@@ -13,7 +13,7 @@ html(lang="en")
     div#jetrunner-stream-debug
     script
       if(#{DEBUG}) {
-        window.onerror = function(err, url, line) {
+        this.onerror = function(err, url, line) {
           document.getElementById('jetrunner-stream-debug').innerHTML += '<p>' + [err, '[' + decodeURIComponent(url) + ':' + line + ']'].join(' ') + '</p>';
         }
       }
@@ -21,9 +21,9 @@ html(lang="en")
     each script in scripts
       script(src="#{script}")
     script
-      assert = chai.assert;
-      expect = chai.expect;
-      mocha.setup({
+      this.assert = chai.assert;
+      this.expect = chai.expect;
+      this.mocha.setup({
         ignoreLeaks: true,
         //reporter: '#{reporter}',
         ui: '#{ui}'
@@ -33,8 +33,9 @@ html(lang="en")
     script(src="#{test}")
     script
       // Run Mocha:
-      reporter = (this.mochaPhantomJS || mocha).run(function() {
+      this.reporter = (this.mochaPhantomJS || mocha).run(function() {
         // JetRunner remote reporting integration (via SauceLabs, BrowserStack, etc.):
-        jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+        document.getElementById('mocha').innerHTML += reporter;
+        self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
       });
 
