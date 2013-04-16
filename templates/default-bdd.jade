@@ -35,6 +35,7 @@ html(lang="en")
       // Run Mocha:
       this.reporter = (this.mochaPhantomJS || mocha).run(function() {
         // JetRunner remote reporting integration (via SauceLabs, BrowserStack, etc.):
+        var reporter = self.reporter;
         self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
       });
 
