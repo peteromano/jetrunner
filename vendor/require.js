@@ -2009,7 +2009,7 @@ var jam = {
         {
             "name": "mocha",
             "location": "vendor/mocha",
-            "main": "mocha/mocha.js"
+            "main": "./index"
         },
         {
             "name": "sinon",
@@ -2036,7 +2036,7 @@ if (typeof require !== "undefined" && require.config) {
         {
             "name": "mocha",
             "location": "vendor/mocha",
-            "main": "mocha/mocha.js"
+            "main": "./index"
         },
         {
             "name": "sinon",
@@ -2062,7 +2062,7 @@ else {
         {
             "name": "mocha",
             "location": "vendor/mocha",
-            "main": "mocha/mocha.js"
+            "main": "./index"
         },
         {
             "name": "sinon",

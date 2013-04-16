@@ -23,17 +23,14 @@ html(lang="en")
     script
       this.assert = chai.assert;
       this.expect = chai.expect;
-      this.mocha.setup({
-        ignoreLeaks: true,
-        //reporter: '#{reporter}',
-        ui: '#{ui}'
-      });
+      this.mocha.ignoreLeaks();
+      this.mocha.ui();
     if src
         script(src="#{src}")
     script(src="#{test}")
     script
       this.reporter = (this.mochaPhantomJS || this.mocha).run(function() {
-        var reporter = self.reporter;
+        var reporter = self.reporter || self.mocha;
 
         try {
             self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
