@@ -12,7 +12,7 @@ describe('Adder', function(){
             expect(Adder.add(3, 2)).to.equal(5);
         });
 
-        it('should be not be absolute.', function(){
+        it('should not be absolute.', function(){
             expect(Adder.add(-3, 2)).to.equal(-1);
         });
 

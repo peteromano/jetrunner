@@ -6,7 +6,7 @@ html(lang="en")
       link(href="#{style}", rel="stylesheet")
   body
     div
-      h3 JetRunner URL:
+      strong JetRunner URL:
       pre(style="white-space:normal;border:solid 1px #ccc;background:#ebebeb;padding:20px;")
         script
           document.write(decodeURIComponent(location));
@@ -32,10 +32,13 @@ html(lang="en")
         script(src="#{src}")
     script(src="#{test}")
     script
-      // Run Mocha:
-      this.reporter = (this.mochaPhantomJS || mocha).run(function() {
-        // JetRunner remote reporting integration (via SauceLabs, BrowserStack, etc.):
+      this.reporter = (this.mochaPhantomJS || this.mocha).run(function() {
         var reporter = self.reporter;
-        self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+
+        try {
+            self.jetstream = [reporter.stats.failures, reporter.stats.passes, reporter.stats.tests, reporter.stats.duration];
+        } catch(e) {
+            self.jetstream = null;
+        }
       });
 
