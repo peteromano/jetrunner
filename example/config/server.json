@@ -1,0 +1,9 @@
+{
+    "runner": {
+        "styles": ["/example/vendor/mocha/mocha.css"],
+        "scripts": [
+            "/example/vendor/mocha/mocha.js",
+            "/example/vendor/sinon/sinon.js"
+        ]
+    }
+}

@@ -43,7 +43,8 @@
     "soda": "~0.2.5",
     "browserstack": "~0.2.0",
     "optimist": "~0.3.7",
-    "colors": "~0.6.0"
+    "colors": "~0.6.0",
+    "tap": "~0.4.1"
   },
   "devDependencies": {
     "jamjs": "~0.2.17",
