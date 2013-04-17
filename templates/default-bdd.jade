@@ -2,6 +2,15 @@
 html(lang="en")
   head
     title= title
+    script
+      this.jetstream    = { status: 0, errors: [], payload: null };
+      this.onerror      = function(err, url, line) {
+                            var msg = [err, '[' + decodeURIComponent(url) + ':' + line + ']'].join(' ');
+                            this.jetstream.errors.push(msg);
+                            if(#{DEBUG}) {
+                              document.getElementById('jetstream-debug').innerHTML += '<p>' + msg + '</p>';
+                            }
+                          }
     each style in styles
       link(href="#{style}", rel="stylesheet")
   body
@@ -10,13 +19,7 @@ html(lang="en")
       pre(style="white-space:normal;border:solid 1px #ccc;background:#ebebeb;padding:20px;")
         script
           document.write(decodeURIComponent(location));
-    div#jetrunner-stream-debug
-    script
-      if(#{DEBUG}) {
-        this.onerror = function(err, url, line) {
-          document.getElementById('jetrunner-stream-debug').innerHTML += '<p>' + [err, '[' + decodeURIComponent(url) + ':' + line + ']'].join(' ') + '</p>';
-        }
-      }
+    div#jetstream-debug
     div#mocha
     each script in scripts
       script(src="#{script}")
@@ -30,32 +33,55 @@ html(lang="en")
     script(src="#{test}")
     script
       this.reporter = (this.mochaPhantomJS || this.mocha).run(function() {
-        var cache = [];
+        var reporter    = self.reporter,
+            jetstream   = self.jetstream,
+            errors      = jetstream.errors;
 
-        if (!Array.prototype.indexOf) {
-            Array.prototype.indexOf = function(obj, start) {
-                 for (var i = (start || 0), j = this.length; i < j; i++) {
-                     if (this[i] === obj) { return i; }
-                 }
-                 return -1;
+        function sanitize(suite, ref) {
+            var sane;
+
+            var clean = sanitize.clean = sanitize.clean || function(tests) {
+                var cleansed = [];
+
+                for(var i = 0, test; i < tests.length; i++) {
+                    test = tests[i];
+
+                    cleansed.push({
+                        duration:   test.duration,
+                        pending:    test.pending,
+                        speed:      test.speed,
+                        state:      test.state,
+                        timedOut:   test.timedOut,
+                        title:      test.title,
+                        type:       test.type,
+                        timer:      test.timer
+                    });
+                }
+
+                return cleansed.concat();
+            };
+
+            if(suite instanceof Array) {
+                for(var i = 0; i < suite.length; i++) {
+                    sanitize(suite[i], ref);
+                }
+            } else if(suite) {
+                sane = suite.title ? (ref[suite.title] = {}) : ref || {};
+
+                if(suite.tests.length) {
+                    sane.tests = clean(suite.tests);
+                }
+
+                sanitize(suite.suites, sane);
             }
+
+            return sane || {};
         }
 
         try {
-            self.jetstream = JSON.stringify(self.reporter, function(key, value) {
-                if (typeof value === 'object' && value !== null) {
-                    if (cache.indexOf(value) !== -1) {
-                        // Circular reference found, discard key
-                        return;
-                    }
-                    // Store value in our collection
-                    cache.push(value);
-                }
-                return value;
-            });
+            self.jetstream = JSON.stringify({ status: Number(!!errors.length), payload: { suite: sanitize(reporter.suite), stats: reporter.stats }, errors: errors });
         } catch(e) {
-            self.jetstream = null;
-        } finally {
-            cache = null;
+            jetstream.errors.push(String(e));
+            self.jetstream = JSON.stringify({ status: Number(!!errors.length), payload: jetstream.payload || null, errors: errors });
         }
       });
