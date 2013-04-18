@@ -79,7 +79,7 @@ html(lang="en")
         }
 
         try {
-            self.jetstream = JSON.stringify({ status: Number(!!errors.length), payload: { tests: sanitize(reporter.suite), results: reporter.stats }, errors: errors });
+            self.jetstream = JSON.stringify({ status: Number(!!errors.length), payload: { suite: sanitize(reporter.suite), results: reporter.stats }, errors: errors });
         } catch(e) {
             jetstream.errors.push(String(e));
             self.jetstream = JSON.stringify({ status: Number(!!errors.length), payload: jetstream.payload || null, errors: errors });
