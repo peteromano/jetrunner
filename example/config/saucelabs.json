@@ -14,6 +14,7 @@
     },
     "client": {
         "driver": "saucelabs",
+        "reportFile": "example/reports/saucelabs.tap",
         "key": "1ebab6ce-c188-486f-86dd-3cc1957f2435",
         "username": "peteromano",
         "password": "j3trvnz3r",
@@ -22,7 +23,7 @@
         "tunnel": {
             "enabled": true,
             "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar",
-            "readyFile": "sauce_connect.log",
+            "readyFile": "example/log/sauce_connect.log",
             "fastFailRegexps": ["favicon.ico"]
         },
         "browsers": [
