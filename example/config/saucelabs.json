@@ -24,23 +24,19 @@
         "tunnel": {
             "enabled": true,
             "path": "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar",
-            "readyFile": "example/log/sauce_connect.log",
+            "logFile": "example/log/sauce_connect.log",
             "fastFailRegexps": ["favicon.ico"]
         },
         "browsers": [
             {"browser": "googlechrome", "os": "OS X 10.8", "browser-version": ""},
             {"browser": "safari", "os": "OS X 10.8", "browser-version": "6"},
-
             {"browser": "firefox", "os": "Windows 8", "browser-version": "20"},
-
             {"browser": "googlechrome", "os": "Windows 7", "browser-version": ""},
             {"browser": "firefox", "os": "Windows 7", "browser-version": "20"},
             {"browser": "iehta", "os": "Windows 7", "browser-version": "9"},
             {"browser": "iehta", "os": "Windows 7", "browser-version": "8"},
-
             {"browser": "googlechrome", "os": "Windows XP", "browser-version": ""},
             {"browser": "firefox", "os": "Windows XP", "browser-version": "20"},
-
             {"browser": "googlechrome", "os": "Linux", "browser-version": ""},
             {"browser": "firefox", "os": "Linux", "browser-version": "20"}
         ]
