@@ -4,7 +4,16 @@
   "title": "JetRunner Unit Test Server",
   "description": "Yo, I heard you like unit tests, bro! JetRunner is the illest name in unit testing!",
   "homepage": "http://peteromano.github.com/jetrunner/",
-  "keywords": ["jetfuel", "jetrunner", "mocha"],
+  "keywords": [
+    "jetfuel",
+    "jetrunner",
+    "mocha",
+    "grunt",
+    "queen",
+    "test",
+    "test-runner",
+    "runner"
+  ],
   "author": {
     "name": "Pete Romano",
     "email": "pete.romano@yahoo.com",
