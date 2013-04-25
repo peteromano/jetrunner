@@ -1,8 +1,8 @@
 {
     "tests": [
-        { "/example/test/adder_test.js":        "/example/src/adder.js" },
-        { "/example/test/divider_test.js":      "/example/src/divider.js" },
-        { "/example/test/multiplier_test.js":   "/example/src/multiplier.js" }
+        { "/example/test/adder_test.js":        "/example/src/adder.js"         },
+        { "/example/test/divider_test.js":      "/example/src/divider.js"       },
+        { "/example/test/multiplier_test.js":   "/example/src/multiplier.js"    }
     ],
     "runner": {
         "styles": ["/example/vendor/mocha/mocha.css"],
@@ -20,7 +20,7 @@
         "password":         "j3trvnz3r",
         "continueOnFail":   true,
         "failOnError":      false,
-        "maxParallel":      2,
+        "maxParallel":      4,
         "tunnel": {
             "enabled":          true,
             "path":             "/usr/local/opt/Sauce-Connect-latest/Sauce-Connect.jar",
@@ -28,17 +28,17 @@
             "fastFailRegexps":  ["favicon.ico"]
         },
         "browsers": [
-            { "browser": "googlechrome", "os": "Linux",      "browser-version": "" },
-            { "browser": "firefox",      "os": "Linux",      "browser-version": "20" },
-            { "browser": "firefox",      "os": "Windows 8",  "browser-version": "20" },
-            { "browser": "googlechrome", "os": "Windows 7",  "browser-version": "" },
-            { "browser": "firefox",      "os": "Windows 7",  "browser-version": "20" },
-            { "browser": "iehta",        "os": "Windows 7",  "browser-version": "9" },
-            { "browser": "iehta",        "os": "Windows 7",  "browser-version": "8" },
-            { "browser": "googlechrome", "os": "Windows XP", "browser-version": "" },
-            { "browser": "firefox",      "os": "Windows XP", "browser-version": "20" },
-            { "browser": "googlechrome", "os": "OS X 10.8",  "browser-version": "" },
-            { "browser": "safari",       "os": "OS X 10.8",  "browser-version": "6" }
+            { "browser": "googlechrome", "os": "Linux",      "browser-version": ""      },
+            { "browser": "firefox",      "os": "Linux",      "browser-version": "20"    },
+            { "browser": "firefox",      "os": "Windows 8",  "browser-version": "20"    },
+            { "browser": "googlechrome", "os": "Windows 7",  "browser-version": ""      },
+            { "browser": "firefox",      "os": "Windows 7",  "browser-version": "20"    },
+            { "browser": "iehta",        "os": "Windows 7",  "browser-version": "9"     },
+            { "browser": "iehta",        "os": "Windows 7",  "browser-version": "8"     },
+            { "browser": "googlechrome", "os": "Windows XP", "browser-version": ""      },
+            { "browser": "firefox",      "os": "Windows XP", "browser-version": "20"    },
+            { "browser": "googlechrome", "os": "OS X 10.8",  "browser-version": ""      },
+            { "browser": "safari",       "os": "OS X 10.8",  "browser-version": "6"     }
         ]
     }
 }
