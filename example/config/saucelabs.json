@@ -15,9 +15,9 @@
     "client": {
         "driver":           "saucelabs",
         "reportFile":       "example/log/tests/report.tap",
-        "key":              "1ebab6ce-c188-486f-86dd-3cc1957f2435",
+        "key":              "",
         "username":         "peteromano",
-        "password":         "j3trvnz3r",
+        "password":         "",
         "continueOnFail":   true,
         "failOnError":      false,
         "maxParallel":      4,
