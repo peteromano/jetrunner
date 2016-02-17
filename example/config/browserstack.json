@@ -15,9 +15,9 @@
     "client": {
         "driver": "browserstack",
         "reportFile": "example/reports/browserstack.tap",
-        "key": "6J2O0vqlTZBEodqdvBMM",
+        "key": "",
         "username": "pete.romano@yahoo.com",
-        "password": "j3trvnz3r",
+        "password": "",
         "continueOnFail": true,
         "tunnel": {
             "enabled": true,
